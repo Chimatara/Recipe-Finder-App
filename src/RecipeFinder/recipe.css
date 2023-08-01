@@ -1,0 +1,211 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    padding:50px 10px 10px 10px;
+}
+.tag{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.input-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#input{
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #e52727;
+    outline: none;
+}
+#btn{
+    width: 5%;
+    background: #e52727;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #f8f8f8;
+}
+#btn:hover, #input:hover{
+    padding: 13px;
+    transition: 0.5s ease-in-out;
+}
+.food-items{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 50px;
+}
+.grid{
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+   position: relative;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.grid:hover{
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 320px;
+    width: 420px;
+    transition: 0.5s ease-out;
+}
+.grid span{
+    padding: 20px 0 0 0;
+}
+.label{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.food-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    width: 80%;
+    margin: 20px;
+}
+.image{
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+.grid button{
+    background: #e52727;
+    padding: 8px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    color: #f8f8f8;
+    margin: 20px 0;
+}
+
+/* error */
+.error{
+    text-align: center;
+    padding: 30px;
+    color: #e52727;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+/* loading */
+.loading{
+    text-align: center;
+    padding: 20px;
+}
+
+/* steps */
+.steps{
+  overflow-y: scroll;
+}
+.recipe-details{
+    width: 450px;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    left: 35%;
+    top: 36%;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.recipe-details img{
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    margin-left: 30px;
+}
+.recipe-details h2{
+    padding: 30px;
+    color: #e52727;
+}
+.recipe-details h3{
+    padding: 20px 30px 5px 30px; 
+    color: #e52727;
+}
+.recipe-details span{
+    border-bottom: 2px solid #e52727;
+}
+.recipe-details ul{
+    padding:10px 50px;
+    list-style-type: lower-roman;
+}
+.recipe-details ul li{
+    padding: 5px;
+    color: #e52727;
+}
+
+.close-btn{
+   width: 100px;
+   background: #e52727;
+   color: #f8f8f8;
+   padding: 8px;
+   border: none;
+   border-radius: 5px;
+   margin: 10px 0 30px 30px;
+}
+.close-btn:active{
+    outline: none;
+    border: whhite;
+}
+
+
+/* media queries */
+@media (max-width: 415px) {
+    #input{
+        padding: 10px;
+        width: 70%;
+        border-radius: 5px 0 0 5px;
+        border: 2px solid #e52727;
+        outline: none;
+    }
+    #btn{
+        width: 20%;
+    }
+}
+@media (max-width: 360px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    #input{
+        padding: 10px;
+        width: 70%;
+        border-radius: 5px 0 0 5px;
+        border: 2px solid #e52727;
+        outline: none;
+    }
+    #btn{
+        width: 20%;
+    }
+}
+@media (max-width: 320px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    #input{
+        padding: 10px;
+        width: 70%;
+        border-radius: 5px 0 0 5px;
+        border: 2px solid #e52727;
+        outline: none;
+    }
+    #btn{
+        width: 20%;
+    }
+}
